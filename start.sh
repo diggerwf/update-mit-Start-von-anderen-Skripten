@@ -25,3 +25,4 @@ while true; do
 done
 
 echo "Skript beendet."
+exit 0
