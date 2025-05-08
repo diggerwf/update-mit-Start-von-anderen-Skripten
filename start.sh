@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Variablen oben definieren
 datei2="update.sh"
 auswahl2="update"
 
@@ -11,16 +10,9 @@ while true; do
     read -p "Deine Wahl (1 oder 2): " auswahl
 
     if [ "$auswahl" == "1" ]; then
-        # Bestätigung abfragen
-        read -p "Bist du sicher? Tippe erneut 1 zum Beenden: " bestätigung
-        if [ "$bestätigung" == "1" ]; then
-            echo "Programm wird beendet."
-            break
-        else
-            echo "Abbruch. Zurück zum Menü."
-        fi
+        echo "Programm wird beendet."
+        break  # Schleife beenden, Programm endet
     elif [ "$auswahl" == "2" ]; then
-        # Überprüfen, ob die Datei existiert
         if [ -f "$datei2" ]; then
             chmod +x "$datei2"
             ./"$datei2"
@@ -31,3 +23,5 @@ while true; do
         echo "Ungültige Auswahl, bitte versuche es erneut."
     fi
 done
+
+echo "Skript beendet."
