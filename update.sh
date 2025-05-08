@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Name der Datei, die am Ende geprüft und ausgeführt werden soll
-ENDSTART="deveniert.sh"  # Hier kannst du den Dateinamen anpassen
+ENDSTART="start.sh"  # Hier kannst du den Dateinamen anpassen
 
 # GitHub-Repository-URL und Branch definieren
-REPO_URL="https://github.com/diggerwf/Updater.git"
+REPO_URL="https://github.com/diggerwf/update-mit-Start-von-anderen-Skripten.git"
 BRANCH="main"
 
 # Pfad zum Repository (aktueller Ordner)
