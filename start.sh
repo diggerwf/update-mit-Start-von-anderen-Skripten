@@ -11,7 +11,7 @@ while true; do
 
     if [ "$auswahl" == "1" ]; then
         echo "Programm wird beendet."
-        break  # Schleife beenden, Programm endet
+        exit 0
     elif [ "$auswahl" == "2" ]; then
         if [ -f "$datei2" ]; then
             chmod +x "$datei2"
